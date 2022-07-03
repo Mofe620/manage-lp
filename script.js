@@ -16,12 +16,9 @@ overlay.addEventListener('click', ()=>{
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    centeredSlides: true,
     slidesPerView: 3,
     spaceBetween: 10,
-    slidesPerGroup: 4,
-    loop: true,
-    loopFillGroupWithBlank: true,
+    slidesPerGroup: 1,
 
     // If we need pagination
     pagination: {
@@ -29,6 +26,24 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     },
   
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        slidesPerGroup: 1,
+      },
+    },
+
     // Navigation arrows
     // navigation: {
     //   nextEl: '.swiper-button-next',
