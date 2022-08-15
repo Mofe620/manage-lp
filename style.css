@@ -322,8 +322,12 @@ footer button {
         font-size: 2rem;
     }
     .hero-text p {
-        margin: 1em 0em;
+        margin: 1.5em 0em;
         width: 100%;
+        font-size: 1.2rem;
+    }
+    .hero-text button {
+        font-size: 1.2rem;
     }
     section.features {
         display: flex;
