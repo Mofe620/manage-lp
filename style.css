@@ -158,6 +158,9 @@ section.testimonials {
     max-width: 400px;
     margin: 0 auto;
 }
+/* SWIPER.JS modification */
+.swiper-pagination-bullet-active { background-color: var(--red) !important;}
+/* End of SWIPER.JS modification */
 section.simplify {
     background-color: var(--red);
     background-image: url(images/bg-simplify-section-desktop.svg);
